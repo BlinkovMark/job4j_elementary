@@ -5,12 +5,19 @@ public class MultiMax {
         int result;
         if (first > second) {
             result = first;
-        } else if (first > third) {
-            result = first;
-        } else if (second > third) {
-            result = second;
         } else {
-          result = third;
+            result = second;
+            if (first > third) {
+                result = first;
+            } else {
+                result = third;
+                if (second > third) {
+                    result = second;
+                } else {
+                    result = third;
+
+                }
+            }
         }
         return result;
     }

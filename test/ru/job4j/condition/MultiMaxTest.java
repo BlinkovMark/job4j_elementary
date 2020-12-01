@@ -13,13 +13,13 @@ public class MultiMaxTest {
 
     @Test
     public void whenFirstMax() {
-        int result = MultiMax.max(10, 2, 2);
+        int result = MultiMax.max(10, 5, 2);
         assertThat(result, is(10));
     }
 
     @Test
     public void whenThirdMax() {
-        int result = MultiMax.max(2, 2, 10);
+        int result = MultiMax.max(4, 4, 10);
         assertThat(result, is(10));
     }
 
@@ -37,7 +37,7 @@ public class MultiMaxTest {
 
     @Test
     public void whenTMax() {
-        int result = MultiMax.max(1, 3, 14);
+        int result = MultiMax.max(5, 7, 14);
         assertThat(result, is(14));
     }
 
@@ -50,6 +50,6 @@ public class MultiMaxTest {
     @Test
     public void whenSomethingWrong() {
         int result = MultiMax.max(1, 2, 3);
-        assertThat(result, is(2)); /* неправильный тест */
+        assertThat(result, is(2));
     }
 }
