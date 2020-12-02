@@ -37,8 +37,8 @@ public class MultiMaxTest {
 
     @Test
     public void whenTMax() {
-        int result = MultiMax.max(5, 7, 14);
-        assertThat(result, is(14));
+        int result = MultiMax.max(10, 5, 100);
+        assertThat(result, is(100));
     }
 
     @Test
