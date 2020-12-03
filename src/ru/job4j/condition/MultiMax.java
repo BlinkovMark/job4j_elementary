@@ -4,19 +4,16 @@ public class MultiMax {
     public static int max(int first, int second, int third) {
         int result;
         if (first > second) {
-            result = first;
-        } else {
-            result = second;
             if (first > third) {
                 result = first;
             } else {
                 result = third;
-                if (second > third) {
-                    result = second;
-                } else {
-                    result = third;
-
-                }
+            }
+        } else {
+            if (second > third) {
+                result = second;
+            } else {
+                result = third;
             }
         }
         return result;

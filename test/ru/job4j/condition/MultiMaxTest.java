@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 public class MultiMaxTest {
     @Test
     public void whenSecondMax() {
-        int result = MultiMax.max(1, 4, 2);
+        int result = MultiMax.max(2, 4, 2);
         assertThat(result, is(4));
     }
 
@@ -31,7 +31,7 @@ public class MultiMaxTest {
 
     @Test
     public void whenSMax() {
-        int result = MultiMax.max(3, 7, 5);
+        int result = MultiMax.max(2, 7, 5);
         assertThat(result, is(7));
     }
 
@@ -43,7 +43,7 @@ public class MultiMaxTest {
 
     @Test
     public void whenAllEqual() {
-        int result = MultiMax.max(20, 20, 20);
+        int result = MultiMax.max(210, 210, 210);
         assertThat(result, is(20));
     }
 
