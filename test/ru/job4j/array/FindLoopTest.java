@@ -27,7 +27,7 @@ public class FindLoopTest {
     @Test
     public void whenArrayHasNot3ThenMinus1() {
         int[] input = {1, 5, 2, 4};
-        int value = 3;
+        int value = 7;
         int result = FindLoop.indexOf(input, value);
         int expect = -1;
         assertThat(result, is(expect));
