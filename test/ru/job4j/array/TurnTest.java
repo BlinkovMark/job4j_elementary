@@ -1,4 +1,4 @@
-package ru.job4j.array;
+package ru.job4j.array; // fix
 
 import org.junit.Test;
 import static org.hamcrest.Matchers.is;
