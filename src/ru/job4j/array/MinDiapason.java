@@ -1,4 +1,4 @@
-package ru.job4j.array;
+package ru.job4j.array; //again
 
 public class MinDiapason {
     public static int findMin(int[] array, int start, int finish) {
