@@ -35,4 +35,11 @@ public class EqLastTest {
         int[] right = {3, 3, 3, 5};
         assertThat(check(left, right), is(false));
     }
+
+    @Test
+    public void whenEq2() {
+        int[] left = {1, 2, 2, 3};
+        int[] right = {5, 4, 3};
+        assertThat(check(left, right), is(true));
+    }
 }
