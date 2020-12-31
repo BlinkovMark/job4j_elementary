@@ -1,4 +1,4 @@
-package ru.job4j.array;
+package ru.job4j.array; //again
 
 public class Merge {
     public static int[] merge(int[] left, int[] right) {
